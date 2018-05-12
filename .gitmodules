@@ -1,0 +1,3 @@
+[submodule "arduino/lib/OneWire"]
+	path = arduino/lib/OneWire
+	url = git@github.com:PaulStoffregen/OneWire.git

@@ -1,0 +1,36 @@
+doe git clone --recursive
+
+interface met ledjes, 
+
+[o] stap 1: scan eigen
+[o] stap 2: scan visitor
+[o] OK [o] ERROR
+
+schakelaar, 
+opties:
+ program
+ uit
+ revoke
+
+program leest deelnemer ibutton, verifieert als normale doorduino, op irc:
+Programmer unlocked
+$deur unlocked by Visitor (nick van deelnemer)
+dan visitor ibutton, controleert of het een visitor-id is, dan flash en secret
+8u toestaan of tot revoke
+
+revoke doet random secret zonder opslaan
+
+pin D2-D8 zijn vrij beschikbaar
+
+D2: led stap 1
+D3: led stap 2
+D4: OK
+D5: ERROR
+
+RJ45 voor paneel:
+  klein stuk dus hoeft niet gebalanceerd?
+  D2: bruin
+  D3: bruin/wit
+  D4: groen
+  D5: blauw/wit
+  GND: oranje/wit
