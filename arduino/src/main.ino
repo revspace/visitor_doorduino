@@ -247,33 +247,7 @@ void loop () {
         }
       }
       led( millis() % 150 > 120 ? OFF : RED);
-
-    } else if (c == 'D') { //Stap 1: deelnemer
-      Serial.println("<D>");
-      digitalWrite(PIN_STEP1, HIGH);
-      digitalWrite(PIN_STEP2, LOW);
-      digitalWrite(PIN_OK, LOW);
-      digitalWrite(PIN_ERROR, LOW);
-    } else if (c == 'V') { //Stap 2: visitor
-      Serial.println("<V>");
-      digitalWrite(PIN_STEP1, LOW);
-      digitalWrite(PIN_STEP2, HIGH);
-      digitalWrite(PIN_OK, LOW);
-      digitalWrite(PIN_ERROR, LOW);
-    } else if (c == 'O') { //OK
-      Serial.println("<O>");
-      digitalWrite(PIN_STEP1, LOW);
-      digitalWrite(PIN_STEP2, LOW);
-      digitalWrite(PIN_OK, HIGH);
-      digitalWrite(PIN_ERROR, LOW);
-    } else if (c == 'E') { //ERROR
-      Serial.println("<E>");
-      digitalWrite(PIN_STEP1, LOW);
-      digitalWrite(PIN_STEP2, LOW);
-      digitalWrite(PIN_OK, LOW);
-      digitalWrite(PIN_ERROR, HIGH);
     }
-
   }
   
   //while (Serial.available()) Serial.read();
